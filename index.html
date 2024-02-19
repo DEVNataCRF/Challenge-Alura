@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="icon_alura">
+        <img class="logo__alura" src="img/Logo.png" alt="Logo Alura">
+    </div>
+
+    <div id="container">
+        <div id="text-content">
+            <textarea id="texto" placeholder="Digite seu texto aqui..."></textarea>
+            <div id="alerta">
+                <img src="img/aviso.png" alt="Aviso" />
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div id="buttons">
+                <button id="botaoCriptografar" onclick="criptografar()">Criptografar</button>
+                <button id="botaoDescriptografar" onclick="descriptografar()">Descriptografar</button>
+            </div>
+        </div>
+        <div id="resposta">
+            <div id="top">
+                <img src="img/lupa.png" alt="Lupa" />
+                <label id="label" aria-labelledby="texto-final">Nenhuma mensagem encontrada</label>
+                <span id="texto-final">Digite um texto que você deseja criptografar ou descriptografar.</span>
+            </div>
+            <button id="copiarTexto" onclick="copiarTexto()">Copiar</button>
+        </div>
+    </div>
+    <footer>Desenvolvido por Natã Corrêa - 2024 &copy;</footer>
+</body>
+
+</html>
